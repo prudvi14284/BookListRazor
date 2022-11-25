@@ -30,7 +30,7 @@ namespace BookListRazor.Controllers
             var bookFromDb = await _db.Book.FirstOrDefaultAsync(u => u.Id == id);
             if (bookFromDb == null)
             {
-                return Json(new { success = false, message = "Error while Deleting" });
+                return Json(new { success = false, message = "Error while ffffffff Deleting" });
             }
             _db.Book.Remove(bookFromDb);
             await _db.SaveChangesAsync();
